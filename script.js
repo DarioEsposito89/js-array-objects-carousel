@@ -143,3 +143,6 @@ downButton.addEventListener("click", function () {
 upButton.addEventListener("click", function () {
     previous();
 });
+
+// SCORRIMENTO AUTOMATICO DELLE IMMAGINI, CON INTERVALLO DI 3 SECONDI
+const autoSlide = setInterval(next, 3000);
