@@ -86,3 +86,10 @@ for (i = 0; i < images.length; i++) {
     rightSlider.append(singleImg);
 }
 
+let currentImg = 0;
+const listLeftImg = document.querySelectorAll(".left-slider-img");
+const listRightImg = document.querySelectorAll(".right-slider-img");
+
+const upButton = document.getElementById("up-button");
+const downButton = document.getElementById("down-button");
+
