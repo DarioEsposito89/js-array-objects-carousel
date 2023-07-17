@@ -46,3 +46,15 @@ body {
     position: absolute;
     z-index: 2;
 }
+
+.left-container-img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+}
+
+.right-container-img {
+    height: 20%;
+    opacity: 50%;
+}
