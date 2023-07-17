@@ -132,3 +132,14 @@ function previous() {
     infoTitle.innerHTML = images[currentImg].title;
     infoText.innerHTML = images[currentImg].text;
 }
+
+
+// BOTTONE SOTTO CHE RICIAMA LA FUNZIONE NEXT
+downButton.addEventListener("click", function () {
+    next();
+});
+
+// BOTTONE SOPRA CHE RICIAMA LA FUNZIONE PREVIOUS
+upButton.addEventListener("click", function () {
+    previous();
+});
