@@ -86,10 +86,49 @@ for (i = 0; i < images.length; i++) {
     rightSlider.append(singleImg);
 }
 
+// IMMAGINE CORRENTE CON VALORE 0
 let currentImg = 0;
+
+// VARIABILI IMMAGINI LEFT e RIGHT
 const listLeftImg = document.querySelectorAll(".left-slider-img");
 const listRightImg = document.querySelectorAll(".right-slider-img");
 
+// VARIABILI PER BOTTONI
 const upButton = document.getElementById("up-button");
 const downButton = document.getElementById("down-button");
 
+// FUNZIONE CHE FA SCORRERE ALL'IMMAGINE SUCCESSIVA
+function next() {
+    listLeftImg[currentImg].classList.remove("active");
+    listRightImg[currentImg].classList.remove("selected");
+
+    // INCREMENTO DELL'IMMAGINE CORRENTE
+    currentImg++;
+
+    if (currentImg === images.length) {
+        currentImg = 0;
+    }
+
+    listLeftImg[currentImg].classList.add("active");
+    listRightImg[currentImg].classList.add("selected");
+    infoTitle.innerHTML = images[currentImg].title;
+    infoText.innerHTML = images[currentImg].text;
+}
+
+// FUNZIONE CHE FA SCORRERE ALL'IMMAGINE PRECEDENTE
+function previous() {
+    listLeftImg[currentImg].classList.remove("active");
+    listRightImg[currentImg].classList.remove("selected");
+
+    if (currentImg === 0) {
+        currentImg = images.length;
+    }
+
+    // DECREMENTO DELL'IMMAGINE CORRENTE
+    currentImg--;
+
+    listLeftImg[currentImg].classList.add("active");
+    listRightImg[currentImg].classList.add("selected");
+    infoTitle.innerHTML = images[currentImg].title;
+    infoText.innerHTML = images[currentImg].text;
+}
