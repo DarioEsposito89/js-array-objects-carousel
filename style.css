@@ -37,6 +37,8 @@ body {
     position: relative;
 }
 
+/* BOTTONI */
+/* --------------- */
 .buttons {
     display: flex;
     flex-direction: column;
@@ -57,7 +59,8 @@ body {
     scale: 0.8;
 }
 
-/* img*/
+/* IMG*/
+/* ----------------- */
 .left-slider-img {
     height: 100%;
     width: 100%;
@@ -79,6 +82,8 @@ body {
     border: 2px solid #fff;
 }
 
+/* DESCRIZIONE */
+/* ----------------- */
 .info {
     position: absolute;
     width: 100%;
