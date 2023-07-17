@@ -11,3 +11,11 @@ body {
     align-items: center;
     height: 100vh;
 }
+
+.carousel {
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    padding: 2rem;
+    background-color: aqua;
+}
